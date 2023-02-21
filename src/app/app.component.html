@@ -1,9 +1,24 @@
-<div  class="navbar">
-    <header class="d-flex py-3">
-      <ul class="nav nav-pills">
-        <li class="nav-item"><a routerLink="/listado" class="nav-link active" aria-current="page">Listado</a></li>
-       
-      </ul>
-    </header>
+<div
+  class=" navbar-color"
+>
+  <div class="container menu">
+    <a
+      routerLink="/home"
+      class="d-flex align-items-center text-dark text-decoration-none"
+    >
+      <img
+        src="https://www.pngplay.com/wp-content/uploads/14/Rick-And-Morty-Logo-Transparent-File.png"
+        alt="logo"
+      />
+    </a>
+
+    <nav class="d-inline-flex mt-2 mt-md-0 ms-md-auto">
+      <a class="me-3 py-2 text-decoration-none" routerLink="/home">Home</a>
+      <a class="me-3 py-2 text-decoration-none" routerLink="/listado"
+        >Personajes</a
+      >
+    </nav>
   </div>
+</div>
+
 <router-outlet></router-outlet>

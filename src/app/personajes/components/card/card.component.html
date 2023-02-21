@@ -1,6 +1,10 @@
-<div class="col-lg-4 card">
-    <img [src]="personaje.image" alt="imagen">
-    <h2 class="fw-normal">{{personaje.name}}</h2>
-    <p>{{personaje.origin.name}}</p>
-    <p><a class="btn btn-secondary" (click)="navegar()">Mas...</a></p>
+
+
+  <div class="card border-warning" style="width: 18rem;">
+    <img [src]="personaje.image" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h2>{{personaje.name}}</h2>
+      <p class="card-text">{{personaje.origin.name}}</p>
+      <button class="btn btn-primary" [routerLink]="['/personaje', personaje.id]">Leer mas...</button>
+    </div>
   </div>

@@ -1,11 +1,38 @@
-.navbar{
+.navbar-color{
     background: rgb(2, 0, 36);
-    background: linear-gradient(
-      90deg
-      rgba(2, 0, 36, 1) 0%,
-      rgba(9, 9, 121, 1) 35%,
+    height: 80px;
+    
+ 
+}
 
-    );
-    padding: 10px;
-    opacity: 98%;
+.menu{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+a{
+  color: aliceblue;
+  font-size: 24px;
+}
+
+img{
+  height: 100px;
+  width: 300px;
+  z-index: 100;
+}
+
+@media screen and (max-width: 600px) {
+ 
+.navbar-color{
+  height: 130px;
+}
+.menu{
+  flex-direction: column;
+}
+img{
+  width: 200px;
+  height: 75px;
+}
+
 }
